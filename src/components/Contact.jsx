@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// template_j0hh8t3;
+// service_la42qa5;
+// nMyue6JrBanbWC0Up;
+
 const Contact = () => {
 	const formRef = useRef();
 	const [loading, setLoading] = useState(false);
@@ -17,8 +21,42 @@ const Contact = () => {
 		message: "",
 	});
 
-	const handleChange = (e) => {};
-	const handleSubmit = (e) => {};
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setForm({ ...form, [name]: value });
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		setLoading(true);
+
+		try {
+			await emailjs.send(
+				"service_la42qa5",
+				"template_j0hh8t3",
+				{
+					from_name: form.name,
+					to_name: "Temitope",
+					from_email: form.email,
+					to_email: "olalekanogunrekun@gmail.com",
+					message: form.message,
+				},
+				"nMyue6JrBanbWC0Up"
+			);
+			alert("Thank you. I wll get back to you as soon as possible");
+			setForm({
+				name: "",
+				email: "",
+				message: "",
+			});
+		} catch (error) {
+			console.error("Error sending message:", error);
+			alert("Failed to send message, please try again.");
+		}
+
+		setLoading(false);
+	};
+
 	return (
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
 			<motion.div
@@ -62,6 +100,7 @@ const Contact = () => {
 							Your Message
 						</span>
 						<textarea
+							required
 							rows="7"
 							name="message"
 							value={form.message}
@@ -82,7 +121,7 @@ const Contact = () => {
 				variants={slideIn("right", "tween", 0.2, 1)}
 				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
 				<EarthCanvas />
-				</motion.div>
+			</motion.div>
 		</div>
 	);
 };
