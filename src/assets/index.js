@@ -26,9 +26,9 @@ import freelancerIcon from "./company/freelancerIcon.jpg";
 import githubIcon from "./company/githubIcon.jpg";
 import developerIcon from "./company/developerIcon.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import aisummaryapp from "./AI-Summary-App.png";
+import cryptoverse from "./Cryptoverse.png";
+import modernrestaurantwebsite from "./Modern-Restaurant-Website.png";
 
 export {
 	logo,
@@ -56,7 +56,7 @@ export {
 	githubIcon,
 	developerIcon,
 	bootcampIcon,
-	carrent,
-	jobit,
-	tripguide,
+	aisummaryapp,
+	cryptoverse,
+	modernrestaurantwebsite,
 };

@@ -19,9 +19,9 @@ import {
 	githubIcon,
 	freelancerIcon,
 	developerIcon,
-	carrent,
-	jobit,
-	tripguide,
+	modernrestaurantwebsite,
+	aisummaryapp,
+	cryptoverse,
 	threejs,
 } from "../assets";
 
@@ -172,7 +172,7 @@ const experiences = [
 const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+			"I thought it was impossible to make a website as beautiful as our product, but Temi proved me wrong.",
 		name: "Sara Lee",
 		designation: "CFO",
 		company: "Acme Co",
@@ -180,7 +180,7 @@ const testimonials = [
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
+			"I've never met a web developer who truly cares about their clients' success like Temi does.",
 		name: "Chris Brown",
 		designation: "COO",
 		company: "DEF Corp",
@@ -188,7 +188,7 @@ const testimonials = [
 	},
 	{
 		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+			"After Temi optimized our website, our traffic increased by 50%. We can't thank them enough!",
 		name: "Lisa Wang",
 		designation: "CTO",
 		company: "456 Enterprises",
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Ai-summary app",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"The AI-Summary App is an advanced tool designed to streamline the way you consume and understand large volumes of text. Whether you're a student, professional, or avid reader, the AI-Summary App helps you save time and focus on what's important by providing quick insights without sacrificing key details.",
 		tags: [
 			{
 				name: "react",
@@ -215,13 +215,13 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: aisummaryapp,
+		source_code_link: "https://github.com/TemitopeRekun/AI-Summary-App",
 	},
 	{
-		name: "Job IT",
+		name: "Modern Restaurant Website",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"The sleek and intuitive website offers a seamless way to explore delectable menu, make reservations, and stay updated on the latest events and promotions. Designed with the user in mind, our site features high-quality images, detailed descriptions, and an easy-to-navigate layout that brings our vibrant atmosphere to your screen.",
 		tags: [
 			{
 				name: "react",
@@ -236,13 +236,14 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: modernrestaurantwebsite,
+		source_code_link:
+			"https://github.com/TemitopeRekun/Modern-Restaurant-Website-using-React.js",
 	},
 	{
-		name: "Trip Guide",
+		name: "Cryptoverse",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"Explore the ever-evolving world of cryptocurrency with Cryptoverse, a dynamic platform offering real-time market data, insightful analysis, and the latest news on various digital assets. Stay informed and make smarter investment decisions with our comprehensive and user-friendly interface.",
 		tags: [
 			{
 				name: "nextjs",
@@ -257,8 +258,8 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: cryptoverse,
+		source_code_link: "https://github.com/TemitopeRekun/crypto-app-reactjs",
 	},
 ];
 
