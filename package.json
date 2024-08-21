@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://TemitopeRekun.github.io/3d_Portfolio",
+	"homepage": "https://temitoperekun.github.io/3d-portfolio",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
