@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -6,10 +5,6 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
-// template_j0hh8t3;
-// service_la42qa5;
-// nMyue6JrBanbWC0Up;
 
 const Contact = () => {
 	const formRef = useRef();
@@ -43,7 +38,9 @@ const Contact = () => {
 				},
 				"nMyue6JrBanbWC0Up"
 			);
-			alert("Thank you. I wll get back to you as soon as possible");
+
+			alert("Thank you. I will get back to you as soon as possible.");
+
 			setForm({
 				name: "",
 				email: "",
@@ -51,7 +48,7 @@ const Contact = () => {
 			});
 		} catch (error) {
 			console.error("Error sending message:", error);
-			alert("Failed to send message, please try again.");
+			alert("Failed to send message. Please try again.");
 		}
 
 		setLoading(false);
@@ -68,22 +65,22 @@ const Contact = () => {
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
-					className="mt12 flex flex-col gap-8">
+					className="mt-12 flex flex-col gap-8">
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4" font->
-							Your Name
-						</span>
+						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
 							type="text"
 							name="name"
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary tex-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							required
 						/>
 					</label>
+
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4" font->
+						<span className="text-white font-medium mb-4">
 							Your Email
 						</span>
 						<input
@@ -92,27 +89,30 @@ const Contact = () => {
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your email?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary tex-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							required
 						/>
 					</label>
+
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-4" font->
+						<span className="text-white font-medium mb-4">
 							Your Message
 						</span>
 						<textarea
-							required
 							rows="6"
 							name="message"
 							value={form.message}
 							onChange={handleChange}
 							placeholder="What do you want to say?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary tex-white rounded-lg outline-none border-none font-medium"
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							required
 						/>
 					</label>
+
 					<button
 						type="submit"
 						className="bg-tertiary py-3 px-8 outline-none w-fit font-bold text-white shadow-md shadow-primary rounded-xl">
-						{loading ? "sending..." : "send"}
+						{loading ? "Sending..." : "Send"}
 					</button>
 				</form>
 			</motion.div>
