@@ -8,12 +8,12 @@ import {
 	Html,
 } from "@react-three/drei";
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../Loader"
 
 // 3D Model Component
 const Computers = memo(({ isMobile }) => {
 	const [showProject, setShowProject] = useState(false);
-	const { scene } = useGLTF("./desktop_pc/scene-draco.gltf");
+	const { scene } = useGLTF("./desktop_pc/scene-draco.glb");
 
 	return (
 		<group>
@@ -32,7 +32,7 @@ const Computers = memo(({ isMobile }) => {
 			{/* 3D Model */}
 			{/* Wrap the model in a group to handle clicks */}
 			<group
-				scale={isMobile ? 0.2 : 0.55}
+				scale={isMobile ? 0.4 : 0.55}
 				position={[0, -3, -1]}
 				rotation={[-0.01, -0.02, -0.1]}>
 				<primitive
@@ -86,9 +86,9 @@ const ComputersCanvas = () => {
 					minPolarAngle={Math.PI / 2}
 				/>
 				<Computers isMobile={isMobile} />
+				{/* Preload all assets in the scene for a smoother experience */}
+				<Preload all />
 			</Suspense>
-			{/* Preload the specific model to ensure it's ready */}
-			<Preload url="./desktop_pc/scene-draco.gltf" />
 		</Canvas>
 	);
 };

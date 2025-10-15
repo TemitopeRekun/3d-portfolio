@@ -1,17 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const FeedbackCard = ({
-	index,
-	testimonial,
-	name,
-	designation,
-	company,
-	image,
-}) => {
+const FeedbackCard = ({ index, testimonial, name, designation, company }) => {
 	return (
 		<motion.div
 			variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -33,11 +25,6 @@ const FeedbackCard = ({
 							{designation} of {company}
 						</p>
 					</div>
-					<img
-						src={image}
-						alt={name}
-						className="w-10 h-10 rounded-full object-cover"
-					/>
 				</div>
 			</div>
 		</motion.div>

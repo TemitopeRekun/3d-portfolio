@@ -172,27 +172,24 @@ const experiences = [
 const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Temi proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
+			"Temitope's ability to translate complex requirements into a seamless user experience is outstanding. The 3D visuals on our new platform have received amazing feedback.",
+		name: "Alex Chen",
+		designation: "Project Manager",
+		company: "Innovatech Solutions",
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Temi does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
+			"Working with Temitope was a fantastic experience. Their technical expertise and commitment to quality were evident in every phase of the project. A true professional.",
+		name: "Jordan Smith",
+		designation: "Lead Developer",
+		company: "Open Source Collective",
 	},
 	{
 		testimonial:
-			"After Temi optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
+			"The performance optimizations Temitope implemented on our site were a game-changer. Load times are down by 40%, and our user engagement has never been higher.",
+		name: "Samantha Miller",
+		designation: "Tech Lead",
+		company: "Quantum Dynamics",
 	},
 ];
 
